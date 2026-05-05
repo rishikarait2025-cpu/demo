@@ -1,1 +1,77 @@
-we have added an index file and we will add this change in git using git add index.html but we will have to commit also only then git will save the file so we will do git commit and then it will say that all the changes are upto datea
+we have added an index file and we will add this change in git using git add index.html but we will have to commit also only then git will save the file so we will do git commit and then it will say that all the changes are upto date if suppose many files are there then we will do git add .
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo
+$ cd demo
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ ls -a
+./  ../  .git/  README.md
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ git add index.html
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ git add .
+
+RISHU@Rishika MINGW64 ~/Desktop/gitdemo/demo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+        new file:   index.html
+
+till here we have just added the changes add means it adds new or changed files in your working directory to the git stating area
+now we will commit the changes which is the record of change
